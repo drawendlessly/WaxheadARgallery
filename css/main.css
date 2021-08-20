@@ -1,20 +1,35 @@
 body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    color: white;
     text-align: center;
-    padding-top: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    color: white;
+}
+
+header, footer {
+    margin: 33px 0;
+}
+
+header img, footer img {
+    display: block;
+    margin: auto;
+    width: 95%;
+    max-width: 1280px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 33px auto;
 }
 
 ul {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+    width: 95%;
+    max-width: 1280px;
+    padding: 33px 0;
+    margin: auto;
+    column-width: 360px;
 }
 
 li {
@@ -22,7 +37,60 @@ li {
     padding-top: 33px;
 }
 
-img {
-    width: 441px;
+li > figure {
+    display: block;
+    width: 350px;
+    position: relative;
+    margin-inline: 0;
+    margin-block: 0;
+    margin: auto;
+}
+
+figure > img {
+    width: 333px;
     border-radius: 25px;
+}
+
+ar-button[ar="quick-look"], ar-button[ar="scene-viewer"] {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 1rem;
+    opacity: 0.9;
+    font-weight: bolder;
+    border-radius: 25px;
+}
+
+ar-button, ar-button .prompt, ar-button::before, ar-button:not([ar="unsupported"]).global {
+    display: none;
+}
+
+ar-button[ar="quick-look"], ar-button[ar="scene-viewer"], ar-button[ar="unsupported"].global {
+    display: flex;
+}
+
+ar-button[ar="unsupported"].global {
+    width: 540px;
+    box-sizing: border-box;
+    margin: auto;
+    opacity: 0.5;
+    font-size: 3rem;
+    border-radius: 36px;
+}
+
+ar-button[ar="quick-look"] .prompt, ar-button[ar="scene-viewer"] .prompt, ar-button[ar="unsupported"].global .prompt {
+    display: inline;
+}
+
+ar-button[ar="quick-look"]::before, ar-button[ar="scene-viewer"]::before {
+    display: block;
+}
+
+ar-button.global ~ p {
+    margin: 0;
+    padding: 0;
+}
+
+ar-button[ar="unsupported"].global ~ p {
+    display: none;
 }
