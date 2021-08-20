@@ -2,56 +2,140 @@
 <html>
     <head>
         <title>Waxhead&apos;s AR Gallery</title>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://unpkg.com/@leoncvlt/ar-button/styles.css">
+        <link rel="stylesheet" href="css/main.css"><meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:locale" content="en_CA">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Waxhead's AR Gallery">
+        <meta property="og:description" content="Waxhead's world in Augmented Reality">
+        <meta property="og:url" content="https://drawendlessly.github.io/WaxheadARgallery/">
+        <meta property="og:image" content="https://drawendlessly.github.io/WaxheadARgallery/assets/site_banner.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <div>
-            <div><span>Waxhead&apos;s AR Gallery</span></div>
-            <div>
+        <header>
+                <img src="assets/Banner.jpg" />
+                <h1>Waxhead&apos;s AR Gallery</h1>
+        </header>
+        <main>
+            <section>
+                <ar-button class="global" show-if-unsupported>
+                    <span class="prompt">Sorry but your device does not support <b>AR</b></span>
+                </ar-button>
+            </section>
+            <section>
                 <ul>
                     <li>
-                        <a rel="ar" href="assets/genisisbuddy.usdz">
+                        <figure>
                             <img src="assets/genisisbuddy.jpg" />
-                        </a>
+                            <ar-button
+                                src="https://drawendlessly.github.io/WaxheadARgallery/assets/genisisbuddy.glb"
+                                ios-src="assets/genisisbuddy.usdz"
+                            >
+                                <span class="prompt">AR</span>
+                            </ar-button>
+                        </figure>
                     </li>
                     <li>
-                        <a rel="ar" href="assets/orangebird.usdz">
+                        <figure>
                             <img src="assets/orangebird.jpg" />
-                        </a>
+                            <ar-button
+                                src="https://drawendlessly.github.io/WaxheadARgallery/assets/orangebird.glb"
+                                ios-src="assets/orangebird.usdz"
+                            >
+                                <span class="prompt">AR</span>
+                            </ar-button>
+                        </figure>
                     </li>
                     <li>
-                        <a rel="ar" href="assets/stackableholdingbaby.usdz">
+                        <figure>
                             <img src="assets/stackableholdingbaby.jpg" />
-                        </a>
+                            <ar-button
+                                src="https://drawendlessly.github.io/WaxheadARgallery/assets/stackableholdingbaby.glb"
+                                ios-src="assets/stackableholdingbaby.usdz"
+                            >
+                                <span class="prompt">AR</span>
+                            </ar-button>
+                        </figure>
                     </li>
                     <li>
-                        <a rel="ar" href="assets/headdressguy.usdz">
+                        <figure>
                             <img src="assets/headdressguy.jpg" />
-                        </a>
+                            <ar-button
+                                src="https://drawendlessly.github.io/WaxheadARgallery/assets/headdressguy.glb"
+                                ios-src="assets/headdressguy.usdz"
+                            >
+                                <span class="prompt">AR</span>
+                            </ar-button>
+                        </figure>
                     </li>
                     <li>
-                        <a rel="ar" href="assets/bulgeyes.usdz">
+                        <figure>
                             <img src="assets/bulgeyes.jpg" />
-                        </a>
+                            <ar-button
+                                src="https://drawendlessly.github.io/WaxheadARgallery/assets/bulgeyes.glb"
+                                ios-src="assets/bulgeyes.usdz"
+                            >
+                                <span class="prompt">AR</span>
+                            </ar-button>
+                        </figure>
                     </li>
                     <li>
-                        <a rel="ar" href="assets/pointyhat.usdz">
+                        <figure>
                             <img src="assets/pointyhat.jpg" />
-                        </a>
+                            <ar-button
+                                src="https://drawendlessly.github.io/WaxheadARgallery/assets/pointyhat.glb"
+                                ios-src="assets/pointyhat.usdz"
+                            >
+                                <span class="prompt">AR</span>
+                            </ar-button>
+                        </figure>
                     </li>
-                </li>
-                <li>
-                    <a rel="ar" href="assets/doublemagicman.usdz">
-                        <img src="assets/doublemagicman.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a rel="ar" href="assets/sushatguy.usdz">
-                        <img src="assets/sushatguy.jpg" />
-                    </a>
-                </li>
+                    <li>
+                        <figure>
+                            <img src="assets/doublemagicman.jpg" />
+                            <ar-button
+                                src="https://drawendlessly.github.io/WaxheadARgallery/assets/doublemagicman.glb"
+                                ios-src="assets/doublemagicman.usdz"
+                            >
+                                <span class="prompt">AR</span>
+                            </ar-button>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="assets/sushatguy.jpg" />
+                            <ar-button
+                                src="https://drawendlessly.github.io/WaxheadARgallery/assets/sushatguy.glb"
+                                ios-src="assets/sushatguy.usdz"
+                            >
+                                <span class="prompt">AR</span>
+                            </ar-button>
+                        </figure>
+                    </li>
                 </ul>
-            </div>
-        </div>
+            </section>
+        </main>
+        <footer>
+            <img class="footer" src="assets/Footer.jpg" />
+        </footer>
+        <script type="module" src="https://unpkg.com/@leoncvlt/ar-button"></script>
+        <script type="text/javascript">
+            for (const li of document.querySelectorAll("li")) {
+                const button = li.querySelector("ar-button");
+                li.addEventListener("click", () => {
+                    button.click();
+                });
+            }
+        </script>
     </body>
 </html>
