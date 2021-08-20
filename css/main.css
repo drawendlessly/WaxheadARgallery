@@ -12,6 +12,10 @@ header, footer {
     margin: 33px 0;
 }
 
+header {
+    margin-bottom: 0;
+}
+
 header img, footer img {
     display: block;
     margin: auto;
@@ -21,13 +25,15 @@ header img, footer img {
 
 h1 {
     font-size: 4rem;
-    margin: 33px auto;
+    margin: 0 auto;
+    margin-top: 33px;
 }
 
 ul {
     width: 95%;
     max-width: 1280px;
-    padding: 33px 0;
+    padding: 0;
+    padding-bottom: 33px;
     margin: auto;
     column-width: 360px;
 }
@@ -72,7 +78,7 @@ ar-button[ar="quick-look"], ar-button[ar="scene-viewer"], ar-button[ar="unsuppor
 ar-button[ar="unsupported"].global {
     width: 540px;
     box-sizing: border-box;
-    margin: auto;
+    margin: 33px auto;
     opacity: 0.5;
     font-size: 3rem;
     border-radius: 36px;
